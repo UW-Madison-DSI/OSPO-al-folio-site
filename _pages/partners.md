@@ -4,7 +4,7 @@ permalink: /partners/
 title: Partners
 description: We are working with the following partner organizations
 nav: true
-nav_order: 1
+# nav_order: 1
 ---
 
 <div class="d-flex flex-col">
