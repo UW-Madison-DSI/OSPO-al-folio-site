@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+title: Something New!
+date: 2024-03-04 11:06:00-0400
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement.
+Yes
