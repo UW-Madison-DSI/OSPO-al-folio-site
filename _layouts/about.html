@@ -35,22 +35,28 @@ layout: default
             {%- endif %}
           </div>
           {%- endif %}
-
+                      
           <div class="clearfix">
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
+          <div class="d-sm-flex flex-sm-column flex-md-row">
+            <!-- News -->
+            <div class="col-md-8 col-sm-12 pl-sm-0 pl-md-0 pr-sm-0 pr-md-2">
+              {% if page.news and site.announcements.enabled -%}
+                <h2 class="uw-mini-bar"><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+                {%- include news.html limit=true %}
+              {%- endif %}
+            </div>
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
+            <!-- Latest posts -->
+            <div class="col-md-4 col-sm-12 pl-sm-0 pr-0">
+              {% if page.latest_posts -%}
+                <h2 class="uw-mini-bar"><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+                {%- include latest_posts.html %}
+              {%- endif %}
+            </div>
+          </div>
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
