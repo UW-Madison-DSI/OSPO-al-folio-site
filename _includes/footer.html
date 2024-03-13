@@ -31,8 +31,8 @@
         <div class="uw-footer-contact">
           <h3 class="uw-footer-header">Contact Us</h3>
           <ul class="uw-contact-list">
+            <li class="uw-contact-item">{{ site.data.footer.contact-info.address }}</a></li>
             <li class="uw-contact-item">Email: <a href="mailto:{ {site.data.footer.contact-info.email }}">{{ site.data.footer.contact-info.email }}</a></li>
-            <li class="uw-contact-item">Phone: <a href="tel:{{ site.data.footer.contact-info.phone }}">{{ site.data.footer.contact-info.phone }}</a></li>
             <li>
               <ul class="uw-social-icons">
                 <li id="uw-icon-twitter" class="uw-social-icon">
@@ -51,7 +51,7 @@
       </div>
 
       <div class="uw-copyright">
-        <p class="uw-contact-item">Feedback, questions or accessibility issues: <a href="mailto:{{site.data.contact-info.email}}">{{site.data.contact-info.email}}</a></p>
+        <p class="uw-contact-item">Feedback, questions or accessibility issues: <a href="mailto:{{ site.data.contact-info.email }}">{{ site.data.contact-info.email }}</a></p>
         <p>© 2017 Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
       </div>
     </footer>
