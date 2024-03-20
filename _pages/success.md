@@ -1,0 +1,25 @@
+---
+title: Success
+layout: default
+permalink: /success/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Success!!</h1>
+    <p>Your form has been submitted!</p>
+    <h2>Would you like to submit logo and screenshot?</h2>
+    <a class="uw-button mb-sm-2 mb-lg-0" href="https://forms.gle/fYkUm5RUbvdjQUSu5" target="_blank">
+        Yes
+    </a>
+    <a href="{{ site.baseurl }}/" class="uw-button">
+        No
+    </a>
+    
+</body>
+</html>
