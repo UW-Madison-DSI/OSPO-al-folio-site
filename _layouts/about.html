@@ -35,28 +35,8 @@ layout: default
             {%- endif %}
           </div>
           {%- endif %}
-                      
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images\OSPOWhat.png" class="d-block w-100" alt="OSPO What">
-              </div>
-              <div class="carousel-item">
-                <img src="images\OSPOHow.png" class="d-block w-100" alt="OSPO How">
-              </div>
-              <div class="carousel-item">
-                <img src="images\OSPOWhy.png" class="d-block w-100" alt="OSPO Why">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+                    
+          {%- include carousel.html %}
           <div class="clearfix">
             {{ content }}
           </div>
@@ -107,13 +87,15 @@ layout: default
               </ul>
           </div>
 
+          <div class="">
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
+
+          <!-- Social
           {%- if page.social %}
             <div class="social">
               <div class="contact-icons">
@@ -122,10 +104,20 @@ layout: default
 
               <div class="contact-note">
                 {{ site.contact_note }}
-              </div>
+              </div> -->
 
             </div>
           {%- endif %}
         </article>
+        
+        <div class="container text-center">
+          <div class="mt-4 uw-content-box">
+              <h2 class="uw-mini-bar-center text-center">Submit a Project</h2>
+              <p>Do you have an open source project? Submit it to our index!</p>
+              <a href="{{ '/submission/' | relative_url }}" target="_blank" class="uw-button justify-content-center">
+                  Project Submission Form
+              </a>
+          </div>
+        </div>
 
 </div>
