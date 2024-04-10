@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A collection of open source projects at UW.
 nav: true
 # nav_order: 3
-display_categories: [work, fun, uncategorized]
+display_categories: [work]
 horizontal: false
 ---
 
