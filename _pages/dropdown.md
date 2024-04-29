@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: default
 title: About
-# nav: true
-# nav_order: 0
+nav: true
+nav_order: 0
 dropdown: true
 children: 
     - title: partners

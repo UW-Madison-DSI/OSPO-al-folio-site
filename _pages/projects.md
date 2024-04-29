@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /projects/
+permalink: /projects
 description: A collection of open source projects at UW.
 nav: true
 # nav_order: 3
