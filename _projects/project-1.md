@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Machine Learning High-resolution Soil Moisture Mapping
-img: assets/img/JingyiHuang.PNG
+img: assets/img/JingyiHuang.png
 importance: 1
 category: work
 ---
@@ -11,7 +11,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/JingyiHuang.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/JingyiHuang.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
